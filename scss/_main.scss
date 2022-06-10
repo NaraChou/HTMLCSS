@@ -67,8 +67,9 @@
         background-repeat: no-repeat;
         background-position: center 70%;
         background-size: 334px 245px;
-        height: 80vh;
+        height: 100vh;
         padding: 0;
+        margin-bottom: 92px;
         }
     .header{
         padding: 16px 20px;
@@ -126,7 +127,7 @@
     .socialmedia {
         padding: 0 61px;
         max-width: 374px;
-        margin-bottom: 60px;
+        margin-bottom: 36px;
         .subtitle {
             max-width: 252px;
             font-size: $font-l + 4px;
@@ -197,7 +198,7 @@
         align-items: center;
         padding: 0 20px;
         max-width: 576px;
-        margin-bottom: 60px;
+        margin-bottom: 36px;
 
         .subtitle {
             max-width: 280px;
@@ -308,11 +309,11 @@
             text-align: center;
             padding: 0;
             align-items: center;
-            margin-bottom: 60px;
+            margin-bottom: 48px;
             .subtitle {
                     font-size: $font-l+4px;
                     text-align: center;
-                }
+            }
         }
     }
 }
@@ -324,7 +325,7 @@
         align-items: center;
         padding: 0 20px;
         max-width: 374px;
-        margin-bottom: 60px;
+        margin-bottom: 36px;
 
         .aside {
             display: flex;
@@ -332,6 +333,7 @@
             text-align: center;
             padding: 0;
             align-items: center;
+            margin-bottom: 32px;
 
             .subtitle {
                 font-size: $font-l+4px;
@@ -340,10 +342,6 @@
 
             h4 {
                 font-size: $font-s;                
-            }
-
-            .btn {
-                margin-bottom: 32px;
             }
         }
 
@@ -451,9 +449,22 @@
 }
 
 @media(max-width: 576px) {
-    .footer-plan{
-        height: 461px;
-        .subtitle{font-size: $font-l;}
+    .footer{
+        background-image: url(https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/footer_sm.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    
+        .footer-plan{
+            height: 461px;
+            .subtitle{
+                margin-bottom: 24px;
+                font-size: $font-l;
+            }
+            .btn{
+                margin-bottom: 60px;
+            }
+        }
     }
 }
 
@@ -566,6 +577,7 @@
     position: fixed;
     bottom: 10%;
     right: 5%;
+    z-index: 10;
 }
 .top{
     color: #fff;

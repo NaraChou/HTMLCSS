@@ -417,8 +417,9 @@ a {
     background-repeat: no-repeat;
     background-position: center 70%;
     background-size: 334px 245px;
-    height: 80vh;
+    height: 100vh;
     padding: 0;
+    margin-bottom: 92px;
   }
   .header {
     padding: 16px 20px;
@@ -489,7 +490,7 @@ a {
   .socialmedia {
     padding: 0 61px;
     max-width: 374px;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
   .socialmedia .subtitle {
     max-width: 252px;
@@ -573,7 +574,7 @@ a {
             align-items: center;
     padding: 0 20px;
     max-width: 576px;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
   .card .subtitle {
     max-width: 280px;
@@ -709,7 +710,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
   .Branding .aside .subtitle {
     font-size: 28px;
@@ -733,7 +734,7 @@ a {
             align-items: center;
     padding: 0 20px;
     max-width: 374px;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
   .Branding .aside {
     display: -webkit-box;
@@ -748,6 +749,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 32px;
   }
   .Branding .aside .subtitle {
     font-size: 28px;
@@ -755,9 +757,6 @@ a {
   }
   .Branding .aside h4 {
     font-size: 16px;
-  }
-  .Branding .aside .btn {
-    margin-bottom: 32px;
   }
   .Branding .BrandingList {
     max-width: 230px;
@@ -909,11 +908,21 @@ a {
 }
 
 @media (max-width: 576px) {
-  .footer-plan {
+  .footer {
+    background-image: url(https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/footer_sm.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+  .footer .footer-plan {
     height: 461px;
   }
-  .footer-plan .subtitle {
+  .footer .footer-plan .subtitle {
+    margin-bottom: 24px;
     font-size: 24px;
+  }
+  .footer .footer-plan .btn {
+    margin-bottom: 60px;
   }
 }
 
@@ -1069,6 +1078,7 @@ a {
   position: fixed;
   bottom: 10%;
   right: 5%;
+  z-index: 10;
 }
 
 .top {
