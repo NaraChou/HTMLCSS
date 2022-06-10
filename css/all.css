@@ -886,8 +886,8 @@ a {
 .footer {
   background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/home_footer.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
 }
 
 .footer .footer-plan {
