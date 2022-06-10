@@ -3,7 +3,7 @@
 }*/
 /*_main.scss header*/
 .headerBg{
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg") ;
+    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/bg_home.svg") ;
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
@@ -63,7 +63,7 @@
 
 @media(max-width: 767px) {
     .headerBg {
-        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
+        background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/bg_home_sm.svg");
         background-repeat: no-repeat;
         background-position: center 70%;
         background-size: 334px 245px;
@@ -437,7 +437,7 @@
 }
 /*_main.scss footer*/
 .footer{
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
+    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/home_footer.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -451,6 +451,10 @@
 }
 
 @media(max-width: 576px) {
+    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/footer_sm.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     .footer-plan{
         height: 461px;
         .subtitle{font-size: $font-l;}
@@ -464,7 +468,7 @@
 
 /*_main.scss Price-header*/
 .headerBgPrice {
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg");
+    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/banner.svg");
     background-repeat: no-repeat;
     background-position: top right;
     height: 60vh;
