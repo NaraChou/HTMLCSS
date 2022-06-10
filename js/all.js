@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.btn-top').click(function () {
-        $('html').scrollTop(0); //'html'為要滑動的部分，0是要滑到的位置（最上）
+    $('.btn-top').click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: 0 }, 1000)
     })
 })
