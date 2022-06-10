@@ -1,0 +1,171 @@
+body,html {
+    font-size: $font-s;
+    line-height: 1.5;
+    font-family: $font-family-base;
+    color: $color-base;
+}
+
+/*（外容器）自適應:最大不超過1200px，自適應水平置中 */
+.container {
+    // 裡面不會放跟容器無關的css
+    max-width: 1120px; // 最大的寬度 用max-width而非width
+    margin: 0 auto;
+    padding-left: 16px; // 左右留一個空隙
+    padding-right: 16px;
+}
+
+.socialmedia-icon {
+    width: 90px;
+    height: 90px;
+}
+
+.font-size12 {
+    font-size: 12px;
+}
+
+.font-size29{
+    font-size: 29px;
+}
+
+.text-align-c,.subtitle,h3,p {
+    text-align: center;
+}
+
+.font-weight,.subtitle,h3,h4 {
+    font-weight: $font-weight;
+}
+
+.subtitle {
+    font-size: $font-s * 2;
+}
+
+h3 {
+    font-size: $font-s * 1.5;
+}
+
+h4 {
+    font-size: $font-m;
+}
+
+.font-blod {
+    font-weight: $font-weight;
+}
+
+.text {
+    color: $color-special;
+}
+
+.text-colorprimary {
+    color: $color-primary;
+}
+
+.text-colorbase {
+    color: $color-base;
+}
+
+.text-colorspecial{
+    color: $color-special;
+}
+
+.text-color{
+    color:#fff;
+}
+
+.text-left {
+    text-align: left;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+.mr-12{
+    margin-right: 12px;
+}
+.mr-16 {
+    margin: 0 16px 0 0;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.btn {
+    width: 136px;
+    height: 49px;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    h4 {
+        color: #fff;
+        font-weight: normal;
+        letter-spacing: 0px;
+    }
+}
+.btn:hover {
+    background: #f6cb52;
+    border: 1px solid #f6cb52;
+    h4 {
+        color: #221e1f;
+    }
+}
+.btn-color{
+    width: 128px;
+    height: 40px;
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    border: 1px solid #FF5D50;
+    h4 {
+        font-size: 16px; 
+        font-weight: normal;
+        color: #fff;
+        letter-spacing: 0px;
+        }
+}
+.btn-color:hover{
+    background: #ffffff;
+    border: 1px solid #FF5D50;
+    
+    h4 {
+        color: #FF5D50;
+    }
+}
+
+.d-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.square {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    padding: 24px 32px;
+}
+
+.equal {
+    padding: 32px 17px;
+}
+

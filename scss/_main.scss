@@ -1,0 +1,573 @@
+/* {
+    outline: 1px solid red;
+}*/
+/*_main.scss header*/
+.headerBg{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg") ;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    height: 100vh;
+    padding: 0 141px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    img{
+        width: 218px;
+    }
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    .bannerTxt{
+        h4{
+            color: $color-primary;
+        }
+        .subtitle{
+            text-align: left;
+            font-size: 48px;
+        }
+        h5{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .bannerPhoto{
+        width: 532px;
+    }
+}
+
+@media(max-width: 992px){
+    .headerBg{
+        height: 60vh;
+    }
+    
+    .banner{
+        .bannerTxt {
+            .subtitle {
+                font-size: 32px;
+            }
+    
+        h5 {
+            font-size: 16px;
+            margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .headerBg {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-position: center 70%;
+        background-size: 334px 245px;
+        height: 80vh;
+        padding: 0;
+        }
+    .header{
+        padding: 16px 20px;
+        margin-bottom: 32px;
+        border-bottom: 2px solid #f6cb52;
+        img {
+            width: 131px;
+        }
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        .bannerTxt {
+            .subtitle {
+                font-size: 32px;
+            }
+        
+            h5 {
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+        }
+        .bannerPhoto{
+            width: 304px;
+            height: 305px;
+        }
+        
+    }
+}
+
+/*_main.scss 三大平台，我來搞定*/
+.socialmedia {
+    max-width: 969px;
+
+    .socialmediaList {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -16px;
+        margin-right: -16px;
+
+        //justify-content: space-between; //如果改用padding去推看看？
+        .socialmediaList-item {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .socialmedia {
+        padding: 0 61px;
+        max-width: 374px;
+        margin-bottom: 60px;
+        .subtitle {
+            max-width: 252px;
+            font-size: $font-l + 4px;
+            margin-bottom: 32px;
+        }
+
+        .socialmediaList {
+            .socialmedia-icon {
+                margin-bottom: 16px;
+                width: 60px;
+                height: 60px;
+            }
+
+            h3 {
+                font-size: $font-m;
+                margin-bottom: 16px;
+            }
+
+            .text {
+                font-size: $font-s;
+                margin-bottom: 24px;
+            }
+
+            .socialmediaList-item {
+                width: 100%;
+            }
+        }
+    }
+}
+/*_main.scss 任何的角色，我都能給*/
+.card {
+    max-width: 1088px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .text-size {
+        font-size: $font-s * 1.25;
+    }
+
+    .cardList {        
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -16px;
+        margin-left: -16px;
+
+        .cardListitem {
+            width: 25%;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            img {
+                border-radius: 12px 12px 0px 0px;
+            }
+
+            .cardListitem-Body {
+                padding: 16px 16px 24px 16px;
+                box-shadow: 0px 2px 10px #00000014;
+                border-radius: 0 0 12px 12px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        max-width: 576px;
+        margin-bottom: 60px;
+
+        .subtitle {
+            max-width: 280px;
+            font-size: $font-l + 4px;
+        }
+
+        .text {
+            margin-bottom: 32px;
+            font-size: $font-m;
+        }
+
+        .cardList {
+            max-width: 260px;
+
+            .text {
+                font-size: $font-s;
+                margin-bottom: 24px;
+            }
+
+            .cardListitem {
+                width: 100%;
+                margin-bottom: 24px;
+                padding: 0;
+            }
+        }
+    }
+}
+/*_main.scss 快速了解客戶輪廓 建立品牌流量池*/
+.Branding {
+    max-width: 1088px;
+    display: flex;
+    align-items: center;
+    .BrandingList {
+            max-width: 547px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -32px;
+            margin-right: -32px;
+    
+            .BrandingListItem {
+                width: 40.5%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 32px;
+                padding-left: 32px;
+                box-shadow: 0px 2px 10px #00000014;
+                border-radius: 12px;
+                margin-right: 24px;
+                margin-left: 24px;
+    
+                .BrandingListItem-Body {
+                    .text {
+                        text-align: left;
+                    }
+                }
+    
+                .cicle {
+                    width: 86px;
+                    height: 86px;
+                    position: relative;
+                    border-radius: 50px;
+                    box-shadow: 0px 2px 10px #00000014;
+                    margin-bottom: 24px;
+    
+                    .position-analyze {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                    }
+    
+                    .position-bot {
+                        position: absolute;
+                        right: 18px;
+                        top: 18px;
+                    }
+    
+                    .position-message {
+                        position: absolute;
+                        right: 20px;
+                        top: 25px;
+                    }
+    
+                    .position-bulk {
+                        position: absolute;
+                        right: 22px;
+                        top: 22px;
+                    }
+                }
+            }
+    }
+    .aside {
+            max-width: 581px;
+            padding: 0 50px 0 135px;
+    
+            .subtitle {
+                text-align: left;
+            }
+    }
+}
+@media (max-width: 992px) {
+    .Branding {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        .aside {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+            align-items: center;
+            margin-bottom: 60px;
+            .subtitle {
+                    font-size: $font-l+4px;
+                    text-align: center;
+                }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .Branding {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 20px;
+        max-width: 374px;
+        margin-bottom: 60px;
+
+        .aside {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+            align-items: center;
+
+            .subtitle {
+                font-size: $font-l+4px;
+                text-align: center;
+            }
+
+            h4 {
+                font-size: $font-s;                
+            }
+
+            .btn {
+                margin-bottom: 32px;
+            }
+        }
+
+        .BrandingList {
+            max-width: 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .BrandingListItem {
+                padding-left: 24px;
+                margin-left: 0;
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+/*_main.scss 好評如潮*/
+.reviewCard{
+    max-width: 1088px;
+    display: flex;
+    justify-content: space-between;
+}
+.reviewCardList{
+    width: 352px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 48px 32px 24px 32px;
+    position: relative;
+    .photo{
+        border-radius:50%;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -70px;
+        left: 30px;
+    }
+    .hr-color{
+        border: 1px solid #e4e4e4;
+        opacity: 0.5;
+    }
+}
+.star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .star-icon{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -4px;
+        img{            
+            padding: 4px;
+        }        
+    }
+}
+.reviewCard-page{
+    text-align: center;
+    .owl-dot{
+        border: none;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        background-color: #DDDDDD;
+        opacity: 1;
+        border-top: 0;
+        border-bottom: 0;
+        transition: all 0.3s;
+        margin: 0 4px;
+    }
+    .active{
+        background-color: #FFD153;
+        width: 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .review{margin-bottom: 60px;}
+    .reviewCard{
+        justify-content: center;   
+        .reviewCardList {
+            margin-bottom: 24px;
+        }
+    }
+    .rwdPad{
+        display: none;
+    }    
+}
+/*_main.scss footer*/
+.footer{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .footer-plan {
+        height: 503px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 576px) {
+    .footer-plan{
+        height: 461px;
+        .subtitle{font-size: $font-l;}
+    }
+}
+
+.copyright{
+    background: #F5F5F5;
+    padding: 16px 0px;
+}
+
+/*_main.scss Price-header*/
+.headerBgPrice {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 60vh;
+    padding: 0 141px;
+}
+.bgColor{
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    border-radius: 0 0 0 300px;
+    background: #f7f9fd;
+    top: 0;
+    z-index: -15;
+}
+.bannerPriceTxt{
+    padding: 100px 0 180px 0;
+    .subtitle{
+        text-align: left;
+        font-size: 48px;
+        font-weight: bold;
+    }
+    h5{font-weight: bold;}    
+}
+/*_main.scss Price-Select*/
+.btn-price{
+    display: flex;
+    justify-content: center;        
+    .btn-border {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #56C4C5;
+        h4 {
+            color: #56C4C5;
+        }
+    }
+}
+.btn-border:hover {
+    background: #56C4C5;
+
+    h4 {
+        color: #fff;
+    }
+}
+
+.priceSelectPlan{
+    display: flex;
+    justify-content: center;
+    margin-left: -16px;
+    .subtitle {
+        font-weight: normal;
+        margin-right: 8px;
+    }
+    .priceSelectItem{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+        margin-right: 16px;
+        .border-bottom{
+            border-bottom: 1px solid #747474;
+            padding: 10px 0;
+        }
+        .padding{
+            padding: 32px 24px;
+            .btn{
+                margin: 0 122px;
+            }
+            .priceTest {
+                display: flex;            
+                }            
+                .propertyItem {
+                display: flex;
+                align-items: center;            
+                }
+        }
+        
+    }    
+}
+
+/*_main.scss Price-QA*/
+.qaPrice{
+    h3 {font-size: 32px;}
+}
+.qaListitem{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    p{text-align: left;}
+}
+/* JQuery scrollTop */
+.btn-top {
+    width: 71px;
+    height: 71px;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+.top{
+    color: #fff;
+}
+
