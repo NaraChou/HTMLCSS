@@ -451,10 +451,6 @@
 }
 
 @media(max-width: 576px) {
-    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/footer_sm.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     .footer-plan{
         height: 461px;
         .subtitle{font-size: $font-l;}
