@@ -125,7 +125,9 @@
 }
 @media (max-width: 576px) {
     .socialmedia {
-        padding: 0 61px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 374px;
         margin-bottom: 36px;
         .subtitle {
@@ -439,6 +441,7 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
+
     .footer-plan {
         height: 503px;
         display: flex;
