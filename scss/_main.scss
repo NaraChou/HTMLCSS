@@ -33,7 +33,7 @@
             font-size: 48px;
         }
         h5{
-            font-size: 20px;
+            font-size: 20px; 
             font-weight: bold;
         }
     }
@@ -581,6 +581,7 @@
     bottom: 10%;
     right: 5%;
     z-index: 10;
+    cursor: pointer;
 }
 .top{
     color: #fff;
