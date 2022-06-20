@@ -1023,6 +1023,24 @@ a {
   font-weight: bold;
 }
 
+@media (max-width: 576px) {
+  .headerBgPrice {
+    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/banner_sm.svg");
+    background-repeat: no-repeat;
+    background-position: left 75px;
+    background-size: contain;
+    height: 567px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+  .bgColor {
+    height: 495px;
+    border-radius: 0 0 0 150px;
+    top: 75px;
+    right: 0px;
+  }
+}
+
 /*_main.scss Price-Select*/
 .btn-price {
   display: -webkit-box;
@@ -1050,6 +1068,20 @@ a {
   color: #fff;
 }
 
+@media (max-width: 576px) {
+  .btn-price {
+    overflow-x: scroll;
+  }
+  .btn-price .btn {
+    width: 90px;
+    height: 40px;
+    padding: 8px 16px;
+  }
+  .btn-price .btn h4 {
+    font-size: 16px;
+  }
+}
+
 .priceSelectPlan {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1057,6 +1089,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: -16px;
 }
 
