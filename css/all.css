@@ -382,6 +382,9 @@ a {
 
 .banner .bannerTxt span {
   color: #56c4c5;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
 }
 
 .banner .bannerTxt .subtitle {
@@ -417,11 +420,11 @@ a {
   .headerBg {
     background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/bg_home_sm.svg");
     background-repeat: no-repeat;
-    background-position: center 70%;
+    background-position: center 95%;
     background-size: 334px 245px;
-    height: 100vh;
+    height: 668px;
     padding: 0;
-    margin-bottom: 92px;
+    margin-bottom: 98px;
   }
   .header {
     padding: 16px 20px;
