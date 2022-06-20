@@ -575,6 +575,11 @@ a {
   border-radius: 0 0 12px 12px;
 }
 
+.card .cardList .cardListitem .cardListitem-Body h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
 @media (max-width: 576px) {
   .card {
     display: -webkit-box;
