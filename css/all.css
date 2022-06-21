@@ -1022,6 +1022,10 @@ a {
   font-weight: bold;
 }
 
+.bannerPriceTxt p {
+  text-align: left;
+}
+
 @media (max-width: 576px) {
   .headerBgPrice {
     background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/banner_sm.svg");
