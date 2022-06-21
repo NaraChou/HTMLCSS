@@ -578,8 +578,8 @@
 
 /*_main.scss Price-Select*/
 .btn-price{
-    display: flex;
-    justify-content: center;        
+    display: flex;  
+    justify-content: center;
     .btn-border {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border: 1px solid #56C4C5;
@@ -596,12 +596,22 @@
     }
 }
 @media(max-width: 576px){
+    .subtitle{
+        font-size: 28px;
+        padding: 0 10px;
+        margin-bottom: 24px;
+    }
     .btn-price{
         overflow-x: scroll;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 4px;
+        margin-bottom: 32px;
         .btn {
             width: 90px;
             height: 40px;
             padding: 8px 16px;
+            margin-right: 6px;
             h4{
                 font-size: 16px;
             }
@@ -643,7 +653,29 @@
         
     }    
 }
-
+@media(max-width: 576px){
+    .priceSelectPlan{
+        margin: 0;
+        .priceSelectItem {
+            width: 100%;
+            margin: 0;
+            .padding {
+                padding: 16px 16px 24px 16px;
+                .square{
+                    padding: 16px 24px;
+                }
+                .subtitle{
+                    padding: 0;
+                }
+                .btn {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    
+}
 
 /*_main.scss Price-QA*/
 .qaPrice{

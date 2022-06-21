@@ -1079,13 +1079,27 @@ a {
 }
 
 @media (max-width: 576px) {
+  .subtitle {
+    font-size: 28px;
+    padding: 0 10px;
+    margin-bottom: 24px;
+  }
   .btn-price {
     overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 4px;
+    margin-bottom: 32px;
   }
   .btn-price .btn {
     width: 90px;
     height: 40px;
     padding: 8px 16px;
+    margin-right: 6px;
   }
   .btn-price .btn h4 {
     font-size: 16px;
@@ -1143,6 +1157,28 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 576px) {
+  .priceSelectPlan {
+    margin: 0;
+  }
+  .priceSelectPlan .priceSelectItem {
+    width: 100%;
+    margin: 0;
+  }
+  .priceSelectPlan .priceSelectItem .padding {
+    padding: 16px 16px 24px 16px;
+  }
+  .priceSelectPlan .priceSelectItem .padding .square {
+    padding: 16px 24px;
+  }
+  .priceSelectPlan .priceSelectItem .padding .subtitle {
+    padding: 0;
+  }
+  .priceSelectPlan .priceSelectItem .padding .btn {
+    margin: 0;
+  }
 }
 
 /*_main.scss Price-QA*/
