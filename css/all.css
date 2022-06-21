@@ -1016,7 +1016,6 @@ a {
 .bannerPriceTxt .subtitle {
   text-align: left;
   font-size: 48px;
-  font-weight: bold;
 }
 
 .bannerPriceTxt h5 {
@@ -1027,7 +1026,7 @@ a {
   .headerBgPrice {
     background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/banner_sm.svg");
     background-repeat: no-repeat;
-    background-position: left 75px;
+    background-position: left 72px;
     background-size: contain;
     height: 567px;
     margin-bottom: 60px;
@@ -1036,8 +1035,15 @@ a {
   .bgColor {
     height: 495px;
     border-radius: 0 0 0 150px;
-    top: 75px;
+    top: 72px;
     right: 0px;
+  }
+  .bannerPriceTxt {
+    padding: 16px 20px;
+  }
+  .bannerPriceTxt .subtitle {
+    text-align: left;
+    font-size: 32px;
   }
 }
 
