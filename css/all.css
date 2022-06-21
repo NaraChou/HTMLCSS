@@ -1148,6 +1148,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .priceSelectPlan .priceSelectItem .padding .propertyItem {
@@ -1173,11 +1176,21 @@ a {
   .priceSelectPlan .priceSelectItem .padding .square {
     padding: 16px 24px;
   }
+  .priceSelectPlan .priceSelectItem .padding .equal {
+    padding: 32px 6px;
+  }
+  .priceSelectPlan .priceSelectItem .padding .font-size29 {
+    font-size: 24px;
+  }
   .priceSelectPlan .priceSelectItem .padding .subtitle {
     padding: 0;
   }
   .priceSelectPlan .priceSelectItem .padding .btn {
     margin: 0;
+  }
+  .propertyItem p {
+    font-size: 14px;
+    text-align: left;
   }
 }
 

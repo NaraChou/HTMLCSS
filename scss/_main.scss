@@ -643,7 +643,8 @@
                 margin: 0 122px;
             }
             .priceTest {
-                display: flex;            
+                display: flex;
+                justify-content: center;
                 }            
                 .propertyItem {
                 display: flex;
@@ -664,6 +665,12 @@
                 .square{
                     padding: 16px 24px;
                 }
+                .equal {
+                    padding: 32px 6px;
+                }
+                .font-size29{
+                    font-size: 24px;
+                }
                 .subtitle{
                     padding: 0;
                 }
@@ -673,7 +680,12 @@
             }
         }
     }
-    
+    .propertyItem{
+        p{
+            font-size: 14px;
+            text-align: left;
+        }
+    }
     
 }
 
