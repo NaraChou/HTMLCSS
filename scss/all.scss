@@ -2,4 +2,6 @@
 @import "meyerweb"; //css rest
 @import "base"; // 客製化-全站設定 
 
-@import "main"; //主要的程式碼
+@import "layout";   //共同框架,第一層
+@import "index";    //首頁
+@import "price";    //分頁

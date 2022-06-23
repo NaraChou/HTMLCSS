@@ -1,66 +1,70 @@
-/* {
-    outline: 1px solid red;
-}*/
 /*_main.scss header*/
-.headerBg{
-    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/bg_home.svg") ;
+.headerBg {
+    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/bg_home.svg");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
     height: 100vh;
     padding: 0 141px;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 0;
-    img{
+
+    img {
         width: 218px;
     }
 }
-.banner{
+
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    .bannerTxt{
-        span{
+
+    .bannerTxt {
+        span {
             color: $color-primary;
             font-weight: bold;
             font-size: 18px;
             display: block;
         }
-        .subtitle{
+
+        .subtitle {
             text-align: left;
             font-size: 48px;
         }
-        h3{
-            font-size: 20px; 
+
+        h3 {
+            font-size: 20px;
             font-weight: bold;
             text-align: left;
         }
     }
-    .bannerPhoto{
+
+    .bannerPhoto {
         width: 532px;
     }
 }
 
-@media(max-width: 992px){
-    .headerBg{
+@media(max-width: 992px) {
+    .headerBg {
         height: 60vh;
     }
-    
-    .banner{
+
+    .banner {
         .bannerTxt {
             .subtitle {
                 font-size: 32px;
             }
-    
-        h3 {
-            font-size: 16px;
-            margin-bottom: 32px;
-            text-align: left;
+
+            h3 {
+                font-size: 16px;
+                margin-bottom: 32px;
+                text-align: left;
             }
         }
     }
@@ -75,36 +79,41 @@
         height: 668px;
         padding: 0;
         margin-bottom: 98px;
-        }
-    .header{
+    }
+
+    .header {
         padding: 16px 20px;
         margin-bottom: 32px;
         border-bottom: 2px solid #f6cb52;
+
         img {
             width: 131px;
         }
     }
+
     .banner {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0 20px;
+
         .bannerTxt {
             .subtitle {
                 font-size: 32px;
             }
-        
+
             h3 {
                 font-size: 16px;
                 margin-bottom: 32px;
                 text-align: left;
             }
         }
-        .bannerPhoto{
+
+        .bannerPhoto {
             width: 304px;
             height: 305px;
         }
-        
+
     }
 }
 
@@ -129,6 +138,7 @@
         }
     }
 }
+
 @media (max-width: 576px) {
     .socialmedia {
         display: flex;
@@ -136,6 +146,7 @@
         align-items: center;
         max-width: 374px;
         margin-bottom: 36px;
+
         .subtitle {
             max-width: 252px;
             font-size: $font-l + 4px;
@@ -165,6 +176,7 @@
         }
     }
 }
+
 /*_main.scss 任何的角色，我都能給*/
 .card {
     max-width: 1088px;
@@ -176,7 +188,7 @@
         font-size: $font-s * 1.25;
     }
 
-    .cardList {        
+    .cardList {
         display: flex;
         flex-wrap: wrap;
         margin-right: -16px;
@@ -195,7 +207,8 @@
                 padding: 16px 16px 24px 16px;
                 box-shadow: 0px 2px 10px #00000014;
                 border-radius: 0 0 12px 12px;
-                h3{
+
+                h3 {
                     font-size: 16px;
                     font-weight: normal;
                 }
@@ -203,6 +216,7 @@
         }
     }
 }
+
 @media (max-width: 992px) {
     .card {
         display: flex;
@@ -232,13 +246,17 @@
             .cardListitem {
                 width: 50%;
                 margin-bottom: 32px;
-                .cardListitem-Body{
-                    .md-24{margin-bottom: 48px;}
+
+                .cardListitem-Body {
+                    .md-24 {
+                        margin-bottom: 48px;
+                    }
                 }
             }
         }
     }
 }
+
 @media (max-width: 576px) {
     .card {
         display: flex;
@@ -274,83 +292,88 @@
         }
     }
 }
+
 /*_main.scss 快速了解客戶輪廓 建立品牌流量池*/
 .Branding {
     max-width: 1088px;
     display: flex;
     align-items: center;
+
     .BrandingList {
-            max-width: 547px;
+        max-width: 547px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -32px;
+        margin-right: -32px;
+
+        .BrandingListItem {
+            width: 40.5%;
             display: flex;
-            flex-wrap: wrap;
-            margin-left: -32px;
-            margin-right: -32px;
-    
-            .BrandingListItem {
-                width: 40.5%;
-                display: flex;
-                flex-direction: column;
-                padding-top: 32px;
-                padding-left: 32px;
+            flex-direction: column;
+            padding-top: 32px;
+            padding-left: 32px;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            margin-right: 24px;
+            margin-left: 24px;
+
+            .BrandingListItem-Body {
+                .text {
+                    text-align: left;
+                }
+            }
+
+            .cicle {
+                width: 86px;
+                height: 86px;
+                position: relative;
+                border-radius: 50px;
                 box-shadow: 0px 2px 10px #00000014;
-                border-radius: 12px;
-                margin-right: 24px;
-                margin-left: 24px;
-    
-                .BrandingListItem-Body {
-                    .text {
-                        text-align: left;
-                    }
+                margin-bottom: 24px;
+
+                .position-analyze {
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
                 }
-    
-                .cicle {
-                    width: 86px;
-                    height: 86px;
-                    position: relative;
-                    border-radius: 50px;
-                    box-shadow: 0px 2px 10px #00000014;
-                    margin-bottom: 24px;
-    
-                    .position-analyze {
-                        position: absolute;
-                        right: 15px;
-                        top: 15px;
-                    }
-    
-                    .position-bot {
-                        position: absolute;
-                        right: 18px;
-                        top: 18px;
-                    }
-    
-                    .position-message {
-                        position: absolute;
-                        right: 20px;
-                        top: 25px;
-                    }
-    
-                    .position-bulk {
-                        position: absolute;
-                        right: 22px;
-                        top: 22px;
-                    }
+
+                .position-bot {
+                    position: absolute;
+                    right: 18px;
+                    top: 18px;
+                }
+
+                .position-message {
+                    position: absolute;
+                    right: 20px;
+                    top: 25px;
+                }
+
+                .position-bulk {
+                    position: absolute;
+                    right: 22px;
+                    top: 22px;
                 }
             }
+        }
     }
+
     .aside {
-            max-width: 581px;
-            padding: 0 50px 0 135px;
-    
-            .subtitle {
-                text-align: left;
-            }
+        max-width: 581px;
+        padding: 0 50px 0 135px;
+
+        .subtitle {
+            text-align: left;
+        }
     }
 }
+
 @media (max-width: 992px) {
     .Branding {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
+
         .aside {
             display: flex;
             flex-direction: column;
@@ -358,13 +381,15 @@
             padding: 0;
             align-items: center;
             margin-bottom: 48px;
+
             .subtitle {
-                    font-size: $font-l+4px;
-                    text-align: center;
+                font-size: $font-l+4px;
+                text-align: center;
             }
         }
     }
 }
+
 @media (max-width: 576px) {
     .Branding {
         display: flex;
@@ -389,7 +414,7 @@
             }
 
             h4 {
-                font-size: $font-s;                
+                font-size: $font-s;
             }
         }
 
@@ -408,49 +433,58 @@
         }
     }
 }
+
 /*_main.scss 好評如潮*/
-.reviewCard{
+.reviewCard {
     max-width: 1088px;
     display: flex;
     justify-content: space-between;
 }
-.reviewCardList{
+
+.reviewCardList {
     width: 352px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
     padding: 48px 32px 24px 32px;
     position: relative;
-    .photo{
-        border-radius:50%;
+
+    .photo {
+        border-radius: 50%;
         width: 80px;
         height: 80px;
         position: absolute;
         top: -70px;
         left: 30px;
     }
-    .hr-color{
+
+    .hr-color {
         border: 1px solid #e4e4e4;
         opacity: 0.5;
     }
 }
-.star{
+
+.star {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    .star-icon{
+
+    .star-icon {
         display: flex;
         flex-wrap: wrap;
         margin-right: -4px;
-        img{            
+
+        img {
             padding: 4px;
-        }        
+        }
     }
 }
-.reviewCard-page{
+
+.reviewCard-page {
     text-align: center;
-    .owl-dot{
+
+    .owl-dot {
         border: none;
         padding: 0;
         width: 10px;
@@ -463,26 +497,33 @@
         transition: all 0.3s;
         margin: 0 4px;
     }
-    .active{
+
+    .active {
         background-color: #FFD153;
         width: 16px;
     }
 }
 
-@media (max-width: 767px){
-    .review{margin-bottom: 60px;}
-    .reviewCard{
-        justify-content: center;   
+@media (max-width: 767px) {
+    .review {
+        margin-bottom: 60px;
+    }
+
+    .reviewCard {
+        justify-content: center;
+
         .reviewCardList {
             margin-bottom: 24px;
         }
     }
-    .rwdPad{
+
+    .rwdPad {
         display: none;
-    }    
+    }
 }
+
 /*_main.scss footer*/
-.footer{
+.footer {
     background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/home_footer.svg");
     background-repeat: no-repeat;
     background-position: top;
@@ -498,270 +539,23 @@
 }
 
 @media(max-width: 576px) {
-    .footer{
+    .footer {
         background-image: url(https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/footer_sm.svg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
-    
-        .footer-plan{
+
+        .footer-plan {
             height: 461px;
-            .subtitle{
+
+            .subtitle {
                 margin-bottom: 24px;
                 font-size: $font-l;
             }
-            .btn{
+
+            .btn {
                 margin-bottom: 60px;
             }
         }
     }
 }
-
-.copyright{
-    background: #F5F5F5;
-    padding: 16px 0px;
-}
-
-/*_main.scss Price-header*/
-.headerBgPrice {
-    background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/banner.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    height: 60vh;
-    padding: 0 141px;
-}
-.bgColor{
-    position: absolute;
-    width: 100%;
-    height: 470px;
-    border-radius: 0 0 0 300px;
-    background: #f7f9fd;
-    top: 0;
-    z-index: -15;
-}
-.bannerPriceTxt{
-    padding: 100px 0 180px 0;
-    .subtitle{
-        text-align: left;
-        font-size: 48px;
-    }
-    h5{font-weight: bold;}
-    p {text-align: left;}
-}
-
-@media(max-width: 576px){
-    .headerBgPrice {
-        background-image: url("https://raw.githubusercontent.com/NaraChou/chatTalker-AI/main/images/banner_sm.svg");
-        background-repeat: no-repeat;
-        background-position: left 72px;
-        background-size: contain;
-        height: 567px;
-        margin-bottom: 60px;
-        padding: 0;
-    }
-    .bgColor {
-        height: 495px;
-        border-radius: 0 0 0 150px;            
-        top: 72px;
-        right: 0px;
-    }
-    .bannerPriceTxt {
-        padding: 16px 20px;    
-        .subtitle {
-            text-align: left;
-            font-size: 32px;
-        }
-    }
-}
-
-
-
-/*_main.scss Price-Select*/
-.btn-price{
-    display: flex;  
-    justify-content: center;
-    .btn-border {
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        border: 1px solid #56C4C5;
-        h4 {
-            color: #56C4C5;
-        }
-    }
-}
-.btn-border:hover {
-    background: #56C4C5;
-
-    h4 {
-        color: #fff;
-    }
-}
-@media(max-width: 576px){
-    .priceSelect{
-        .subtitle {
-            font-size: 28px;
-            padding: 0 10px;
-            margin-bottom: 24px;
-        }
-    }
-    
-    .btn-price{
-        overflow-x: scroll;
-        display: flex;
-        justify-content: flex-start;
-        padding: 0 4px;
-        margin-bottom: 32px;
-        .btn {
-            width: 90px;
-            height: 40px;
-            margin-right: 6px;
-            h4{
-                font-size: 16px;
-            }
-        }
-    }
-    
-}
-.priceSelectPlan{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    .subtitle {
-        font-weight: normal;
-        margin-right: 8px;
-    }
-    .priceSelectItem{
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px 2px 10px #00000014;
-        border-radius: 12px;
-        margin-right: 16px;
-        .border-bottom{
-            border-bottom: 1px solid #dddddd;
-            padding: 10px 0;
-        }
-        .padding{
-            padding: 32px 24px;
-            .btn{
-                margin: 0 122px;
-            }
-            .priceTest {
-                display: flex;
-                justify-content: center;
-                }            
-                .propertyItem {
-                display: flex;
-                align-items: center;            
-                }
-        }
-        
-    }    
-}
-@media (max-width: 992px) {
-    .priceSelectPlan{
-        margin: 0;
-        .priceSelectItem {
-            margin: 0;
-            margin-bottom: 24px;
-        }
-    }
-    
-}
-@media(max-width: 576px){
-    .priceSelect{
-        margin-bottom: 60px;
-    }
-    .priceSelectPlan{
-        margin: 0;
-        .priceSelectItem {
-            width: 100%;
-            margin: 0;
-            margin-bottom: 24px;
-            .border-bottom{
-                padding: 16px 0px;
-            }
-            .padding {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 16px 16px 24px 16px;
-                .porperty{
-                    margin-bottom: 35px;
-                }
-                .square{
-                    padding: 16px 24px;
-                }
-                .equal {
-                    padding: 32px 6px;
-                }
-                .font-size29{
-                    font-size: 24px;
-                }
-                .subtitle{
-                    padding: 0;
-                    margin: 0;
-                }
-                .btn{
-                    margin: 0;
-                }
-            }
-        }
-    }
-    .propertyItem{
-        p{
-            font-size: 14px;
-            text-align: left;
-        }
-    }
-    
-}
-
-/*_main.scss Price-QA*/
-.qaPrice{
-    h3 {font-size: 32px;}
-}
-.qaListitem{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 2px 10px #00000014;
-    border-radius: 12px;
-    padding: 16px 32px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    p{text-align: left;}
-}
-
-@media (max-width: 576px) {
-    .qaPrice{
-        margin-bottom: 60px;
-        h3{
-            margin-bottom: 32px;
-        }
-        .qaListitem{
-            h4{
-                font-size: 16px;
-                font-weight: normal;
-            }
-            .sizeRwd{
-                width: 16px;
-                height: 16px;
-            }
-        }
-    }
-}
-
-/* JQuery scrollTop */
-.btn-top {
-    width: 71px;
-    height: 71px;
-    background: #56C4C5 0% 0% no-repeat padding-box;
-    border: 1px solid #56C4C5;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 10%;
-    right: 5%;
-    z-index: 10;
-    cursor: pointer;
-}
-.top{
-    color: #fff;
-}
-
